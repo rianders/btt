@@ -23,6 +23,22 @@ One thing that can would make it helpful is if the students could use a web page
 
 
 notes:
+Another concern is to make sure there is enough space on the car pi.
+```
+#list images
+docker image ls
+
+#find unused images
+docker image ls -f dangling=true
+
+#Remove/Prune unused images
+docker image prune
+
+#remove all
+docker image prune -a
+
+
+```
 
 One way to make getting the data out of the Docker image is to make sure to run with a volume. Then use 
 
